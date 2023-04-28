@@ -194,6 +194,8 @@ body {
     line-height: 1.8;
     font-size: 16px;
     color: var(--color-font-base);
+    font-family: var(--font-en);
+    font-family: var(--font-jp);
 }
 
 /* レイアウト */
@@ -213,6 +215,18 @@ body {
     text-align: center;
     margin: 0 auto;
     display: block;
+    margin-top: 48px;
+    margin-bottom: 80px;
+}
+
+.c-button--black {
+    background-color: var(--color-bg-black);
+    border: 1px solid var(--color-border-black);
+}
+
+.c-button--white {
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-border-white);
 }
 
 .c-button::after {
@@ -260,4 +274,91 @@ body {
 .concept-text-wrapper {
     margin-top: 40px;
     text-align: center;
+}
+
+/* メニュー */
+
+.bg-menu {
+    background-image: url(../img/bg-top-menu.jpg);
+    height: 700px;
+    margin: 5px calc(50% - 50vw) 15px;
+    width: 100vw;
+}
+
+.menu-item {
+    display: flex;
+    color: var(--color-font-white);
+}
+
+.table-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ショップリスト */
+.shop-list {
+    text-align: center;
+}
+
+.shop-about {
+    color: var(--color-font-primary);
+    margin-bottom: 30px;
+}
+
+.shop-list-button-flex {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.shop-list-button {
+    width: 32%;
+    margin: 5px;
+    padding: 13px;
+    border-radius: 40px;
+    background-color: var(--color-bg-secondary);
+}
+
+.bottom-kv {
+    background-image: url(../img/bg-top-separate.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    margin: 5px calc(50% - 50vw) 15px;
+    width: 100vw;
+}
+
+/* BLOG&NEWS */
+.post-items {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+}
+
+.post-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-adjust {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* instagram */
+.instagram {
+    background-color: var(--color-bg-secondary);
+    margin: 5px calc(50% - 50vw) 15px;
+    width: 100vw;
+    padding: 20px;
+}
+
+.instagram-img {
+    display: flex;
 }
