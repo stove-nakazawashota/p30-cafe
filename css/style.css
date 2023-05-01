@@ -244,30 +244,40 @@ body {
 }
 
 /* ヘッダー */
-.header {
-    padding: 20px 30px;
-}
-
-.header-inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-logo {
-    width: 190px;
-}
-
-.header-menu {
-    display: flex;
-}
-
-.header-menu-inner {
-    display: flex;
-    align-items: center;
-}
-
 .header-menu-item {
-    margin-right: 30px;
+    display: none;
+}
+
+.responsive-header-items {
+    display: flex;
+}
+
+@media screen and (min-width: 764px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        width: 190px;
+    }
+
+    .header-menu {
+        display: flex;
+    }
+
+    .header-menu-inner {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-menu-item {
+        margin-right: 30px;
+    }
 }
 
 /* コンセプト */
@@ -277,7 +287,6 @@ body {
 }
 
 /* メニュー */
-
 .bg-menu {
     background-image: url(../img/bg-top-menu.jpg);
     height: 700px;
@@ -359,6 +368,39 @@ body {
     padding: 20px;
 }
 
-.instagram-img {
+@media screen and (min-width: 764px) {
+    .instagram-img {
+        display: flex;
+    }
+}
+
+/* Footer-bottom */
+.footer-bottom {
+    background-color: var(--color-bg-primary);
+    text-align: center;
+    color: var(--color-font-white);
+    margin: 0 auto;
+}
+
+.fb-logo-img {
+    width: 300px;
+    margin: 0 auto;
+    margin: 20px 0;
+}
+
+.shop-location {
     display: flex;
+    width: var(--width-content-s);
+    justify-content: center;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.shop-location-item {
+    margin-left: 10px;
+}
+
+.shop-location-item::after {
+    content: "/";
+    margin-left: 10px;
 }
